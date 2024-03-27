@@ -1,0 +1,23 @@
+.title{
+    color:chocolate;
+    text-align: center;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+html, body{
+    height: 100%;
+    max-height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+.top-container{
+    padding-top: 10%;
+    color:black;
+}
+.general-container form{
+    margin-top: 50px;
+}
+.general-container{
+    background: url('img/pexels-eberhard-grossgasteiger-640781.jpg');
+    height: 100%;
+}

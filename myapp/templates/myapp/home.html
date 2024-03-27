@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="section-top">
+        <img src="{% static 'myapp/css/img/BestChoice.png' %}" class="img-responsive">
+    </div>
+
+    <div class="section section1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">
+                        Новые поступления
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row">
+                {% for product_image in products_images %}
+                    {% include 'myapp/product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="section section-delivery">
+        <div class="container">
+            <h3>Бесплатная доставка по Кишинёву!</h3>
+        </div>
+    </div>
+
+    
+    <div class="section section2 phones-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">
+                        Телефоны
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row">
+                {% for product_image in products_images_phones %}
+                    {% include 'myapp/product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="section section3 laptops-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">
+                        Ноутбуки
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row">
+                {% for product_image in products_images_laptops %}
+                    {% include 'myapp/product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="section section4 headphones-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">
+                        Наушники
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row">
+                {% for product_image in products_images_headphones %}
+                    {% include 'myapp/product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="section section5 tablets-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">
+                        Планшеты
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row">
+                {% for product_image in products_images_tablets %}
+                    {% include 'myapp/product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
